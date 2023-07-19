@@ -20,9 +20,10 @@ body{
 .container{
     position: relative;
     width: 100%;
-    max-width: 1000px;
-    min-height: 1000px;
+    max-width: 990px;
+    min-height: 990px;
     margin: 0px;
+    padding: auto;
     background: #fff;
     color: #fff;
     display: grid;
@@ -33,7 +34,7 @@ body{
 .container .left-side{
     position: relative;
     background: #003147;
-    padding: 40px;
+    padding: 20px;
 }
 
 .profileText{
@@ -104,12 +105,14 @@ body{
     width: 30px;
     font-size: 18px;
     color: #03a9f4;
+    padding: auto;
 }
 
 .contacInfo ul li span{
     color: #fff;
     font-weight: 300;
-
+    padding: auto;
+    margin: auto;
 }
 
 .contacInfo.education li{
@@ -163,8 +166,8 @@ body{
 
 .container .right-side{
     position: relative;
-    background: #fff;
-    padding: 40px;
+    background: #ffffff;
+    padding: 20px;
 }
 
 .about{
@@ -180,6 +183,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 p{
@@ -190,7 +194,6 @@ p{
 }
 
 .h2{
-    font-weight: 600;
     color: #000000;
     font-size: 18px;
     margin-bottom: .8rem;
@@ -204,7 +207,8 @@ p{
 }
 
 .h4{
-    font-weight: 300;
+    font-weight: 400;
+    letter-spacing: 1px;
     color: #000000;
     font-size: 17px;
     margin-bottom: 2rem;
@@ -216,12 +220,37 @@ p{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0;
+
+    }
+
+    .left-side{
+        position: relative;
+        width: 90%;
+        max-width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .right-side{
         position: relative;
-        width: 100%;
-        min-width: 360px;
+        width: 90%;        
+        max-width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 1.1rem;
+    }
+}
+
+@media  screen and (min-width:240px) and (max-width:320px) {
+    .left-side{
+        position: relative;
+        width: 103%;
+        max-width: 320px;
         display: flex;
         flex-wrap: wrap;
     }
